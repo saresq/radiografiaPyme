@@ -37,7 +37,7 @@ function drawHighcharts(id) {
 
   var porcentajeRegistro = ((dataset[id].pymesRegistradas*100)/dataset[id].pymesTotal).toFixed(1);
 
-  dataHTML = "<div class='row p-t-2'><div class='col-md-2 text-right'><h4>";
+  dataHTML = "<div class='row p-t-2'><div class='col-md-2 chartItem'><h4>";
   dataHTML += dataset[id].nombre;
   dataHTML += "</h4><p class='text-muted'>PyMEs Total<br><strong>";
   dataHTML += Number(dataset[id].pymesTotal).toLocaleString();
