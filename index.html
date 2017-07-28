@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<link rel="stylesheet" href="http://www.produccion.gob.ar/wp-content/uploads/2016/11/roboto-fontface.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/donuts.css">
+<link rel="stylesheet" href="css/ponchix.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="js/countUp.js"></script>
+<script src="js/arrangeLabels.js"></script>
+<!--D3.JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+
+
+<main role="main" style="font-family: Roboto !important">
+  <section class="jumbotron" style="background-image: url('http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/background.jpg');margin-top:-43px !important">
+<div class="gradient">
+
+    <div class="jumbotron_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 text-center">
+            <h1 class="m-b-2" id="titulo-jumbo" style="color:#fff"><span><strong>200.000 PyMEs</strong><br>Registradas</span>&nbsp;</h1>
+            <h3 style="color:#fff; margin-bottom:40px" id="subtitleH3">TENÉS UNA PYME, TENÉS BENEFICIOS</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="overlay"></div>
+
+
+  </section>
+  <div class="curve-container bottom" style=""><svg id="hex-shape" class="curve bottom-right" width="100%" viewBox="0 0 612 94.24"><path d="M612,65.55V67.4L50.23,99.72c-6.17,0-13.65,4.32-16.74,9.7L0,159.79V65.55H612Z" transform="translate(0 -65.55)" fill="#fff"></path></svg></div>
+  <div class="row" style="background-color:#fff">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h2 class="m-b-2" id="beneficios" style="font-weight:bold; color:#F29E1E">BENEFICIOS</h2>
+      <hr>
+      <ul style="list-style: none;">
+        <li>Ya son más de 200.000 las pequeñas y medianas empresas que se registraron y pueden aprovechar los beneficios de la Ley PyME: medidas de alivio fiscal, más y mejores opciones de financiamiento, ayuda para invertir y acceso a créditos. </li>
+      </ul>
+  <section style="padding-top:0" class="m-t-2 m-b-3">
+    <div class="container">
+
+      <div class="row m-t-2 text-sm-center">
+        <div class="col-md-4 m-b-3 text-sm-left">
+          <div class="back-foto" style="border-color:#F29F1F">
+
+          <div class="col-md-12 col-md-offset-0 back-container" style="background: url('http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/background.jpg')">
+            <div class="gradient text-left">
+              <img class="icon-image" src="http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/img/icon1.png" alt="">
+              <!-- <span class="fa-stack fa-lg icon-image">
+                <i class="fa fa-circle fa-stack-2x" style="color:#F29F1F"></i>
+                <i class="fa fa-clock-o fa-stack-1x" style="color:#fff"></i>
+              </span> -->
+            </div>
+          </div>
+          <div class="col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0 text-left">
+            <h4 class="uppercase"><strong>Pago de IVA a 90 días</strong></h4>
+            <p>Si tenés una micro o pequeña empresa, vas a poder pagar el IVA a 90 días.</p><br /><br />
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 m-b-3 text-sm-left">
+          <div class="back-foto" style="border-color:#3BB8E6">
+
+          <div class="col-md-12 col-md-offset-0 back-container" style="background: url('http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/background.jpg')">
+            <div class="gradient text-left">
+              <img class="icon-image" src="http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/img/icon2.png" alt="">
+              <!-- <span class="fa-stack fa-lg icon-image">
+                <i class="fa fa-circle fa-stack-2x" style="color:#F29F1F"></i>
+                <i class="fa fa-clock-o fa-stack-1x" style="color:#fff"></i>
+              </span> -->
+            </div>
+          </div>
+          <div class="col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0 text-left">
+            <h4 class="uppercase"><strong>Alivio fiscal</strong></h4>
+            <p>Ya no vas a pagar Impuesto a la Ganancia Mínima Presunta y vas a poder descontar parte del impuesto al cheque de lo que pagás de Ganancias.</p>
+            
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 m-b-3 text-sm-left">
+          <div class="back-foto" style="border-color:#CF2748">
+
+          <div class="col-md-12 col-md-offset-0 back-container" style="background: url('http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/background.jpg')">
+            <div class="gradient text-left">
+              <!-- <img class="icon-image" src="img/icon3.png" alt=""> -->
+              <span class="fa-stack fa-lg icon-image">
+                <i class="fa fa-circle fa-stack-2x" style="color:#CF2748"></i>
+                <i class="fa fa-file-o fa-stack-1x" style="color:#fff"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0 text-left">
+            <h4 class="uppercase"><strong>Más cŕedito</strong></h4>
+            <p>Se amplió el cupo prestable de la Línea de Créditos de Inversión Productiva y se creó una nueva línea, Primer Crédito PyME.</p><br />
+          </div>
+        </div>
+        </div>
+
+
+        </div>
+      </div>
+
+</section>
+</div>
+
+  <a href="http://www.produccion.gob.ar/pymes/" target="_blank">
+    <div class="col-md-4 col-md-offset-4 boton text-center shrinkCenter" style="margin-bottom:-70px">
+          <h3 style="color:white;text-decoration: none">Registrá tu PyME</h3>
+    </div>
+  </a>
+
+</div>
+
+<div class="row">
+  <svg class="mobileHide" id="hex-shape" viewBox="0 0 612 92.39" width="100%"><path d="M612,159.79V67.4H0l33.49,50.37c3.09,5.38,10.57,9.7,16.74,9.7Z" fill="#fff" transform="translate(0 -67.4)"></path></svg>
+    <div class="col-md-8 col-md-offset-2 text-center mobileHide" style="padding-bottom:70px">
+      <h2 class="m-b-2" style="font-weight:bold; color:#3BB8E6">RANKING</h2>
+      <hr>
+      <h4>Porcentajes de PyMEs registradas por provincia</h4>
+      <!-- <div class="hierarchical" id="barGraph">
+
+      </div> -->
+      <div class="mobileHide" id="barChart">
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="margin:20px; color:#8EC0E4"></i>
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+</div>
+
+  <section style="background: linear-gradient(-60deg, #D8E8FF 35%, #fff 35%);">
+    <!--div class="text-center">
+      <img class="img-bloque"  width="150" alt="" src="http://www.produccion.gob.ar/wp-content/uploads/2016/11/leydeemprendedores/icono-simplificacion-blanco.png">
+    </div-->
+    <div class="container" onmouseover="contadoresArgentina(); changeDonuts(provincias_data['arg'])">
+        <div class="row m-t-2 text-center">
+          <h2 style="text-align:center; font-weight:bold; color:#CF2748" id="donas">Las PyMEs en las provincias</h2>
+          <hr>
+
+<div class="dropdown pcHide" >
+  <button onclick="dropFunction()" class="dropbtn boton"><h4>Provincias <i class="fa fa-angle-down"></i></h4></button>
+    <div id="myDropdown" class="dropdown-content"  >
+      <input type="text" placeholder="Buscar..." id="myInput" onkeyup="filterFunction()">
+            <!-- <div class="percentHolder"><a id="buenos_aires">Buenos Aires</a>
+      </div><div class="percentHolder"><a id="tierra_del_fuego">Tierra del Fuego</a>
+      </div><div class="percentHolder"><a id="jujuy">Jujuy</a>
+      </div><div class="percentHolder"><a id="salta">Salta</a>
+      </div><div class="percentHolder"><a id="formosa">Formosa</a>
+      </div><div class="percentHolder"><a id="chaco">Chaco</a>
+      </div><div class="percentHolder"><a id="catamarca">Catamarca</a>
+      </div><div class="percentHolder"><a id="santiago_del_estero">Santiago del Estero</a>
+      </div><div class="percentHolder"><a id="misiones">Misiones</a>
+      </div><div class="percentHolder"><a id="tucuman">Tucumán</a>
+      </div><div class="percentHolder"><a id="corrientes">Corrientes</a>
+      </div><div class="percentHolder"><a id="la_rioja">La Rioja</a>
+      </div><div class="percentHolder"><a id="santa_fe">Santa Fe</a>
+      </div><div class="percentHolder"><a id="san_juan">San Juan</a>
+      </div><div class="percentHolder"><a id="cordoba">Córdoba</a>
+      </div><div class="percentHolder"><a id="entre_rios">Entre Ríos</a>
+      </div><div class="percentHolder"><a id="san_luis">San Luis</a>
+      </div><div class="percentHolder"><a id="mendoza">Mendoza</a>
+      </div><div class="percentHolder"><a id="la_pampa">La Pampa</a>
+      </div><div class="percentHolder"><a id="neuquen">Neuquén</a>
+      </div><div class="percentHolder"><a id="rio_negro">Río Negro</a>
+      </div><div class="percentHolder"><a id="chubut">Chubut</a>
+      </div><div class="percentHolder"><a id="santa_cruz">Santa Cruz</a>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="infoContainer">
+    <div class="infoHeader">
+      <h2 id="provPymes"></h2>
+      <div class="infoShadow">
+      </div>
+    </div>
+    <div class="infoBody">
+      <h4>Total de pymes:</h4>
+      <h3 id="totalPymes"></h3>
+      <h4>% de PyMEs registradas:</h4>
+      <h3><span id="porcPymes"></span>%</h3>
+      <div class="porcContainer">
+        <div class="porcBar" id="porcBar">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+          <div class="col-md-8 m-b-3 text-sm-center" style="padding:0;">
+              <div class="col-md-4 text-right">
+                <h4><span class="back-color" style="background:#CF2748; color:#fff">Por categoría</span></h4>
+              </div>
+              <div class="col-md-8 m-b-3 donut-container" id="donut1">
+              </div>
+              <hr class="mobileHide" style="width: 75%;border-color:#ddd;float: left;margin-left: 150px;">
+
+              <div class="col-md-4 text-right">
+                <h4><span class="back-color" style="background:#F69D1F; color:#fff">Por sector</span></h4>
+              </div>
+              <div class="col-md-8 m-b-3 donut-container" id="donut2">
+              </div>
+              <hr class="mobileHide" style="width: 62%;border-color:#ddd;float: left;margin-left: 150px;">
+
+              <div class="col-md-4 text-right">
+                <h4><span class="back-color" style="background:#3BB8E6; color:#fff">% de empleadoras</span></h4>
+              </div>
+              <div class="col-md-8 m-b-3 donut-container" id="donut3">
+              </div>
+
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center shrinkCenter">
+              <p style="background-color:#3182bd; color:#fff; border-radius:3px">Fuente: Consejo de Monitoreo y Competitividad MiPyME (SEPYME), en base a datos del registro PyME y GPS Empresas (STP)</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="col-md-4 m-b-3 mobileHide" id="map">
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/dumb-data.js"></script>
+<script type="text/javascript" src="js/changeDonuts.js"></script>
+<!-- <script type="text/javascript" src="http://www.produccion.gob.ar/wp-content/uploads/2016/12/loadMap.js"></script> -->
+<script type="text/javascript" src="js/loadMap.js"></script>
+<script type="text/javascript" src="js/loadDonut1.js"></script>
+<script type="text/javascript" src="js/loadDonut2.js"></script>
+<script type="text/javascript" src="js/loadDonut3.js"></script>
+<script type="text/javascript" src="js/barrasMobile.js"></script>
+<script type="text/javascript">
+var options = {
+  useEasing : true,
+  useGrouping : true,
+  separator : ',',
+  decimal : '.',
+  prefix : '',
+  suffix : ''
+};
+// var demo = new CountUp("myTargetElement", 90000, 3322, 4, 2.5, options);
+// demo.start();
+</script>
+<script src="http://www.produccion.gob.ar/wp-content/uploads/2016/12/registropymes/js/hierarchical.js"></script>
+
+</body>
+</html>

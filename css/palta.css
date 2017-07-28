@@ -1,0 +1,957 @@
+/*FIXES GENERALES*/
+
+html {
+  overflow-x: hidden;
+
+}
+
+.thin{
+  font-weight: 100
+  /*with love, HL*/
+}
+
+/*FIXES A STYLES.CSS*/
+
+.video-row {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-flex {
+  position: static
+}
+
+.video-text {
+  text-align: justify
+}
+
+.numberdiv {
+  flex-flow: column;
+  text-align: center;
+}
+
+.iconoTexto, .panelIcono {
+  display: flex;
+  align-items: center
+}
+
+section .row {
+  margin-left: -15px!important;
+  margin-right: -15px!important
+}
+
+.panelIcono {
+  justify-content: center
+}
+
+.iconoTexto {
+  justify-content: flex-start;
+  flex-flow: column
+}
+
+.navbar-nav>li>.dropdown-menu>li>a {
+  border-bottom: 1px solid #dbdbdb;
+  display: block;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 12px 15px;
+  text-align: center
+}
+
+.hidden-xl-down, .hidden-xs-up, .visible-print-block {
+  display: none!important
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #FFF!important;
+  background-image: none
+}
+
+.navbar-default .nav>li>a {
+  font-weight: 400
+}
+
+#site-footer .list-group-item {
+  background-color: transparent
+}
+
+blockquote {
+  margin: 0;
+  text-align: center;
+}
+
+article {
+  margin: -30px 0 0!important;
+  padding: 30px 0 0!important;
+  max-width: 100vw!important
+}
+
+article a {
+  text-decoration: none
+}
+
+.navbar .navbar-brand img {
+  max-height: 100%
+}
+
+img.img-responsive {
+  max-height: none!important;
+  min-height: none!important
+}
+
+.social-share {
+  margin: 0;
+  min-height: 32px
+}
+
+figure.alignright {
+  float: right;
+  margin: 0 0 1em 1em
+}
+
+figure.alignleft {
+  float: left;
+  margin: 0 1em 1em 0
+}
+
+figure.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+a img.alignright {
+  float: right;
+  margin: 0 0 1em 1em
+}
+
+a img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.santActive {
+  color: #fff!important;
+  background-color: #666!important
+}
+
+
+/*FIXES DE SAFARI*/
+
+.row:after, .row:before {
+  width: 0;
+  content: ""
+}
+
+
+/*MOBILE FIXES*/
+
+@media (max-width:767px) {
+  .video-row {
+    flex-flow: column
+  }
+}
+
+
+/*HEADER*/
+
+.menuLista {
+  list-style: none;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.menuLista-item {
+  padding-top: 0.5rem;
+}
+
+.menuLista>li {
+  font-size: 16px;
+}
+
+.menuLista>li>ul {
+  padding-left: 1rem;
+}
+
+.menuLista>a, .menuLista>ul>a, .menuLista>li>a, .menuLista>li>ul>a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.menuListaIco {
+  position: absolute;
+  left: 1.1rem;
+  font-size: 18px;
+  padding-top: 0.1rem;
+}
+
+.menuInput {
+  width: 10rem;
+}
+
+.menuInputChico {
+  width: 5rem;
+  font-size: 14px;
+  float: left;
+}
+
+.menuSearchIco {
+  position: absolute;
+  top: 0.45em;
+  left: 9rem;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.btn-primary, .navbar-default, .navbar-nav>li>.dropdown-menu>li>a, .panel-default>.panel-heading {
+  background-image: none
+}
+
+.btn-search {
+  margin-bottom: 0 !important;
+  height: 54px !important;
+}
+
+.navbar .navbar-brand {
+  padding: 10px 0
+}
+
+.navbar li {
+  padding-bottom: 0 !important;
+}
+
+
+/*Icono al final de input*/
+
+.fa-input {
+  position: absolute;
+  top: 0.45em;
+  z-index: 2;
+  right: 1.5em;
+}
+
+
+/*CONTACT FORM 7*/
+
+.alert-success, .alert-warning {
+  color: #333!important
+}
+
+.wpcf7-submit {
+  height: 54px!important
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px
+}
+
+.wpcf7-list-item {
+  display: block
+}
+
+.wpcf7-captchac {
+  height: 40px
+}
+
+.wpcf7-text {
+  color: #111!important
+}
+
+.contentFormat {
+  padding-top: 0!important
+}
+
+.contentFormat h2, .contentFormat h3, .contentFormat h4, .contentFormat h5, .contentFormat h6 {
+  margin-top: 2em
+}
+
+
+/*PONCHOBOT*/
+
+#htmlCode {
+  user-select: all;
+  background: #202020;
+  color: #fff;
+  font-family: monospace;
+  padding: 5em;
+  margin: 0;
+  border-style: none;
+  border-radius: 0;
+  max-width: 100vw;
+  overflow: auto;
+}
+
+nav#side-nav {
+  padding: 40px 0;
+  width: 300px
+}
+
+nav.stick {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  margin-top: 12px
+}
+
+
+/*MAP*/
+
+.map {
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  -ms-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  filter: grayscale(70%)
+}
+
+.maps {
+  height: 60vh;
+  overflow: hidden;
+  margin-bottom: -47px;
+}
+
+.maps iframe {
+  pointer-events: none
+}
+
+
+/*TABLE*/
+
+.table-row {
+  display: table-row;
+  background-color: rgba(6, 149, 214, .7)
+}
+
+.table-row .table-cell {
+  display: table-cell
+}
+
+@media (max-width:768px) {
+  .table-cell {
+    float: left
+  }
+  .borde-der {
+    border-right: 0
+  }
+  .borde-izq {
+    border-left: 0
+  }
+  .voucherCantidad {
+    bottom: 50px;
+    position: absolute;
+    right: 15;
+  }
+  .voucherDescripcion {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .table-cell {
+    float: none
+  }
+  .borde-der {
+    border-right: 2px solid #fff
+  }
+  .borde-izq {
+    border-left: 2px solid #fff
+  }
+}
+
+
+/*CAROUSEL*/
+
+.carouselBotons {
+  position: absolute;
+  top: 40%
+}
+
+.carousel-inner .item>img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 60vh
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%
+}
+
+.text-uppercase {
+  text-transform: uppercase!important
+}
+
+@media (min-width:1024px) {
+  .overlap {
+    background: #F9F9F9;
+    border-radius: 4px;
+    box-sizing: content-box;
+    left: -60px;
+    margin-top: -60px;
+    padding: 0 60px;
+    position: relative
+  }
+}
+
+.filter {
+  font-size: 20px;
+  color: #B9B1B1;
+  padding-top: 15px;
+  font-weight: 700
+}
+
+.btn-lupa {
+  padding: 5px 15px!important;
+  border: none!important;
+  border-radius: 4px!important;
+  height: 30px!important;
+  outline: 0!important
+}
+
+
+/* Overlap Div para Plantilla Noticia*/
+
+@media (min-width: 1024px) {
+  .overlap {
+    background: #F9F9F9;
+    border-radius: 4px;
+    box-sizing: content-box;
+    left: -60px;
+    margin-top: -60px;
+    padding: 0px 60px 0;
+    position: relative;
+  }
+}
+
+.filter {
+  font-size: 20px;
+  color: #B9B1B1;
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+.btn-lupa {
+  padding: 5px 15px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  height: 30px !important;
+  outline: 0px !important;
+}
+
+
+/* Flecha para ir al top de la pag. */
+
+.colorCeleste {
+  color: #0695d6 !important;
+}
+
+.ir-arriba {
+  display: none;
+  z-index: 10;
+  background: #fff;
+  font-size: 30px;
+  color: #0695d6 !important;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+
+/*Saca atributos de color a tags a*/
+
+a.unlink {
+  color: #333 !important;
+  text-decoration: none;
+}
+
+.descuento {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.cantidad {
+  width: 50px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #939393;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+.btn-slim {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 5;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+
+/* CSS de historiales de vouchers. */
+
+.btn-agregar {
+  padding: 2px 15px !important;
+}
+
+.btn-agregar .fa-plus-circle {
+  margin-right: 5px;
+}
+
+.debold {
+  font-weight: normal;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.alert-contacto {
+  background-color: #0695d6;
+}
+
+.alert-contacto .alert {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.tabla-vouchers .fa {
+  font-size: 22px;
+}
+
+.instructivo-vouchers .fa {
+  font-size: 80px;
+}
+
+.instructivo-vouchers .fa-usd {
+  font-size: 56px;
+  margin-top: -23px;
+}
+
+.instructivo-vouchers img {
+  height: 80px;
+}
+
+.instructivo-vouchers span.fa-stack {
+  height: 80px;
+}
+
+.alert-verde {
+  padding: 5px;
+}
+
+.alert-verde .fa {
+  color: #111;
+  font-size: 40px;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+
+/* fin css historiales de voucher*/
+
+
+/*Arreglos para voucherLista*/
+
+.voucher {
+  padding: 1rem;
+  border-bottom: 2px solid #f7f7f7;
+  border-radius: 4px;
+}
+
+.voucher:first-child {
+  margin-top: 1.5rem
+}
+
+.voucher:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.ayudaModal {
+  position: absolute;
+  bottom: 5;
+  right: 20;
+}
+
+
+/*home*/
+
+.voucher-beneficios .fa {
+  font-size: 70px;
+}
+
+
+/*fin voucherLista*/
+
+
+/*PALETA DE COLORES*/
+
+
+/*Los nombres va a haber que cambiarlos pero son los nuevos colores de Background planteados por Clari*/
+
+.bg-gris {
+  background-color: #e9e9e9 !important;
+}
+
+.bg-gclaro {
+  background-color: #f7f7f7 !important;
+}
+
+.bg-default {
+  background-color: #767676 !important;
+  color: #ffffff;
+}
+
+.bg-celeste {
+  background-color: #daf1f8 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-palta {
+  background-color: #a8cd00 !important;
+}
+
+.text-palta {
+  color: #a8cd00;
+}
+
+.bg-turquesa {
+  background-color: #24bb9c !important;
+}
+
+.text-turquesa {
+  color: #24bb9c;
+}
+
+.bg-rosa {
+  background-color: #ff6363 !important;
+}
+
+.text-rosa {
+  color: #ff6363;
+}
+
+.bg-naranja {
+  background-color: #f7872f !important;
+}
+
+.text-naranja {
+  color: #f7872f;
+}
+
+.bg-violeta {
+  background-color: #7e62b3 !important;
+}
+
+.text-violeta {
+  color: #7e62b3;
+}
+
+.text-blanco {
+  color: #ffffff !important;
+}
+
+.bg-primary-claro {
+  background-color: #82bee2 !important;
+}
+
+.bg-info-claro {
+  background-color: #9ed7e8 !important;
+}
+
+.text-primary-claro {
+  color: #82bee2 !important;
+}
+
+.text-info-claro {
+  color: #9ed7e8 !important;
+}
+
+.bg-modal {
+  background: #F9F9F9;
+  border-radius: 4px;
+  box-shadow: 0 0 10px -4px black;
+  padding: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (max-width:768px) {
+  .bg-modal {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/*FUNCIONES DE BOOTSTRAP V4*/
+
+.align-middle {
+  vertical-align: middle!important;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width:575px) {
+  .hidden-xs-down {
+    display: none!important
+  }
+}
+
+@media (min-width:576px) {
+  .hidden-sm-up {
+    display: none!important
+  }
+}
+
+@media (max-width:767px) {
+  .hidden-sm-down {
+    display: none!important
+  }
+}
+
+@media (min-width:768px) {
+  .hidden-md-up {
+    display: none!important
+  }
+}
+
+@media (max-width:991px) {
+  .hidden-md-down {
+    display: none!important
+  }
+}
+
+@media (min-width:992px) {
+  .hidden-lg-up {
+    display: none!important
+  }
+}
+
+@media (max-width:1199px) {
+  .hidden-lg-down {
+    display: none!important
+  }
+}
+
+@media (min-width:1200px) {
+  .hidden-xl-up {
+    display: none!important
+  }
+}
+
+@media print {
+  .visible-print-block {
+    display: block!important
+  }
+}
+
+.visible-print-inline {
+  display: none!important
+}
+
+@media print {
+  .visible-print-inline {
+    display: inline!important
+  }
+}
+
+.visible-print-inline-block {
+  display: none!important
+}
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block!important
+  }
+  .hidden-print {
+    display: none!important
+  }
+}
+
+
+/*MEDIA KIT*/
+
+.mediakit-img img {
+  width: 100%;
+  height: auto;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+
+/* FIX para paneles con iconos font awesome, utilizandose con iconos Argob */
+
+.fa-con-ia-icons {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.icono-fa {
+  padding: 0px !important;
+}
+
+
+/*Circulo con texto centrado*/
+
+
+/*mobile*/
+
+@media (max-width:767px) {
+  .circulo {
+    color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    padding-top: 1.25rem;
+    display: block;
+    font-weight: bold;
+  }
+  .circulo h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  .circulo h6 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+
+/*tblt desktop*/
+
+@media (min-width:768px) {
+  .circulo {
+    color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    padding-top: 2.25rem;
+    display: block;
+    font-weight: bold;
+  }
+  .circulo h1 {
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  .circulo h6 {
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+
+/* Background Position */
+
+.background-bottom {
+  background-position: bottom;
+}
+
+.background-top {
+  background-position: top;
+}
+
+
+/* Fix jquery.DataTables */
+
+.dataTables_paginate>.pagination {
+  margin-top: 0px;
+  float: right;
+}
+
+.dataTables_filter>label, .dataTables_length>label {
+  float: right;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.dataTables_filter>label>input, .dataTables_length>label>input {
+  width: 100%!important;
+}
+
+.dataTables_length>label>select {
+  padding-top: 1px;
+}
+
+
+/*Arreglo Footer para que este siempre abajo*/
+
+.footerGoBot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  clear: both;
+}
