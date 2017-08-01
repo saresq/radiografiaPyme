@@ -99,7 +99,7 @@
           </div>
 
         </div>
-        <p class="small text-center text-muted m-t-4"> Los datos de esta página se actualizan semanalmente.</p>
+        <p class="small text-center text-muted m-t-4" id="fechaActualizacion"> </p>
       </div>
     </section>
 
@@ -250,7 +250,7 @@
       dataset = data;
 
       drawRegion([0, 4, 10, 20]);
-      drawDatos(data[0].data, data[1].data, data[2].data);
+      drawDatos(data[0].data, data[1].data, data[2].data, data[3].data);
       drawRegionArg(24);
     };
 

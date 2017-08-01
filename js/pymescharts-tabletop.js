@@ -160,10 +160,11 @@ function drawRegion(array){
   }
 }
 
-function drawDatos(universo,vigentes,totales){
+function drawDatos(universo,vigentes,totales, fecha){
   var porcVigentes = vigentes/universo*100;
   var porcTotales = totales/universo*100;
   $('#universoPyme').html('<h1>' + Number(universo).toLocaleString() + '</h1><p>Universo PyME</p>');
-  $('#pymesVigentes').html('<h1>' + Number(vigentes).toLocaleString() + '<span class="thin"> | ' + Number(porcVigentes.toFixed(1)).toLocaleString() + '%</span></h1><p>PyMEs registradas vigentes</p><p class="small">aclaracion magica 123 probando</p>');
+  $('#pymesVigentes').html('<h1>' + Number(vigentes).toLocaleString() + '<span class="thin"> | ' + Number(porcVigentes.toFixed(1)).toLocaleString() + '%</span></h1><p>PyMEs registradas vigentes</p>');
   $('#pymesTotales').html('<h1>' + Number(totales).toLocaleString() + '<span class="thin"> | ' + Number(porcTotales.toFixed(1)).toLocaleString() + '%</span></h1><p>PyMEs registradas totales</p>');
+  $('#fechaActualizacion').html('Última fecha de actualizacion:'+ fecha.toLocaleString());
 }
