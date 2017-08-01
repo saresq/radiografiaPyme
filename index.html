@@ -68,14 +68,23 @@
     </section>
 
 
-    <section id="" class="text-center m-y-3">
+    <section id="" class="text-center m-t-3">
       <div class="container">
         <p>
           Desde la sanción de la Ley PyME, las micro, pequeñas y medianas empresas del país ahorraron 3.500 millones de pesos en impuestos. Para acceder a todos los beneficios, sólo tienen que registrarse.
         </p>&nbsp;&nbsp;
-        <p>
-          <a class="btn btn-primary btn-md" onclick="ga('send', 'event', 'boton', 'click', 'clickpymesregistro')" target="_blank" href="https://www.afip.gob.ar/PYMES">Cómo registrarse</a>
-        </p>&nbsp;&nbsp;
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+
+            <div class="col-md-6">
+              <a class="btn btn-primary btn-block" onclick="ga('send', 'event', 'boton', 'click', 'clickpymesregistro')" target="_blank" href="https://www.afip.gob.ar/PYMES">Cómo registrarse</a>
+            </div>
+
+            <div class="col-md-6">
+              <a class="btn btn-primary btn-block" target="_blank" href="http://www.produccion.gob.ar/pymes/">Conocé todos los beneficios</a>
+            </div>
+          </div>
+        </div>
         <div class="row panels-row p-t-3">
           <div class="p-t-3 p-b-3 col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 iconoTexto bg-primary text-center numberdiv" id="universoPyme">
 
@@ -90,12 +99,13 @@
           </div>
 
         </div>
-
+        <p class="small text-center text-muted m-t-4"> Los datos de esta página se actualizan semanalmente.</p>
       </div>
     </section>
 
     <section class="bg-white p-t-0">
       <div class="container">
+
         <h4 class="text-primary text-center">Total de PyMEs registradas</h4>
 
         <div class="" id="chartArg"></div>
